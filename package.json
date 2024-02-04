@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kerkeniaziz/natrous/issues"
   },
-  "homepage": "https://github.com/kerkeniaziz/natrous#readme"
+  "homepage": "https://github.com/kerkeniaziz/natrous#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
