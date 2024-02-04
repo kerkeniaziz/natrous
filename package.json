@@ -1,0 +1,19 @@
+{
+  "name": "natrous",
+  "version": "1.0.0",
+  "description": "learning node, express and mongoDB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kerkeniaziz/natrous.git"
+  },
+  "author": "kerkeniaziz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kerkeniaziz/natrous/issues"
+  },
+  "homepage": "https://github.com/kerkeniaziz/natrous#readme"
+}
