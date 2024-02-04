@@ -30,6 +30,28 @@ app.get('/api/v1/tours', (req, res) => {
     });
 });
 
+app.get('/api/v1/tours/:id', (req, res) => {
+    console.log(req.params)
+    const id = req.params.id *1;
+
+    if (id> tours.length) {
+        return res.status(404).json({
+            status : 'fail',
+            message : 'invalid id',
+        });
+    }
+
+    const tour = tours.find(el => el.id === id);
+
+    res.status(200).json({
+        status : 'success', 
+        data : {
+            tour
+        }
+        
+    });
+});
+
 
 app.post('/api/v1/tours', (req, res) => {
    // console.log(req.body);
@@ -47,10 +69,6 @@ app.post('/api/v1/tours', (req, res) => {
         })
     })
 
-
-
-
-    
 } )
 
 const port = 3000;
