@@ -1,5 +1,5 @@
-
 const fs = require('fs');
+
 const tours = JSON.parse(fs.readFileSync(`${__dirname}/../dev-data/data/tours-simple.json`));
 
 
@@ -74,7 +74,6 @@ exports.addNewTour = (req, res) => {
 };
 
 exports.updateTourById = (req, res) => {
-    const id = req.params.id *1;
 
     console.log(req.body);
     res.status(200).json({status : 'success',data : {tour :'update tour here'}});
